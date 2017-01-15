@@ -1,0 +1,21 @@
+Product Family : Kintex-7
+Project Part: xc7k70tfb676-1
+
+				FSMD		
+	Estimation	Available	Utilization %
+LUT 		33		41000			0.08
+FF			51		82000			0.06
+IO			20		  300			6.67
+BUFG 		 1		   32			3.12
+
+				FSM_D (FSM+D)		
+	Estimation	Available	Utilization %
+LUT 		29		41000			0.07
+FF			42		82000			0.05
+IO			20		  300			6.67
+BUFG 		 1		   32			3.12
+
+The area utilization of FSM+D design is better than FSMD.
+1) FSMD is more coarser behavioural design compared to FSM+D
+2) FSM+D we define individual components of datapath which gives synthesis tool better idea of modelling the datapath.
+   While in case FSMD we just define the behaviour and leave it to the synthesis tool to map it best to a LUT.
